@@ -1,0 +1,33 @@
+.Register {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    background: #683f6899;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.Register label {
+    color: white;
+    font-weight: bold;
+    font-size:2rem;
+}
+
+.Register input {
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid black;
+    color: white;
+    font-size:1.7rem;
+    outline: none;
+}
+.Register button {
+    width: 100%;
+    background: #358135;
+    box-shadow: 0px 2px 3px #00000063;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1rem;
+    color: white;
+    padding: 7px 0;
+}

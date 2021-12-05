@@ -1,0 +1,117 @@
+.room {
+    height: 100%;
+}
+.room > * {
+    margin-bottom: 2%;
+}
+
+.chat_name {
+    height: 10%;
+    font-size: 1.5rem;
+}
+
+.room_users {
+    height: 10%;
+    font-size: 1.2rem;
+}
+
+.messages_holder {height: 70%;overflow: auto;font-size: 1.2rem;}
+
+.send {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.send input {
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid black;
+    color: white;
+    font-size:1rem;
+    outline: none;
+}
+.send button {
+    background: #358135;
+    box-shadow: 0px 2px 3px #00000063;
+    border-radius: 15px;
+    font-size: 1rem;
+    color: white;
+    padding: 7px 12px;
+}
+
+.message {width: 66%;background: white;padding: 10px 12px;margin-bottom: 8px;border-radius: 10px;}
+.message span {font-size: 1rem; margin-bottom: 5px}
+
+.message p {
+    font-size: 1.5rem;
+    margin:0;
+}
+.time {
+    font-size: 0.6rem;
+}
+.mine {
+    align-items: flex-end;
+}
+
+.mine.message {
+    color: white;
+    margin-left: 19%;
+    background: linear-gradient(to bottom, #00D0EA 0%, #0085D1 100%);
+    background-attachment: fixed;
+    position: relative;
+}
+
+.yours.message {
+    margin-left: 5%;
+    background-color: #eee;
+    position: relative;
+}
+.yours.message:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: -7px;
+    height: 20px;
+    width: 20px;
+    background: #eee;
+    border-bottom-right-radius: 15px;
+}
+.yours.message:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -10px;
+    width: 10px;
+    height: 20px;
+    background: #3e5c77;
+    border-bottom-right-radius: 10px;
+}
+
+
+.mine.message:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: -8px;
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(to bottom, #00D0EA 0%, #0085D1 100%);
+    background-attachment: fixed;
+    border-bottom-left-radius: 15px;
+}
+
+.mine.message:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: -10px;
+    width: 10px;
+    height: 20px;
+    background: #3e5c77;
+    border-bottom-left-radius: 10px;
+}
